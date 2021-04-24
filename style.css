@@ -1,0 +1,64 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  background-color: rgb(2, 83, 56);
+}
+.menu ul{
+  text-align: center;
+}
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 15px;
+  color: antiquewhite;
+
+}
+.menu ul :hover > li{
+  background-color: cornflowerblue;
+}
+
+
+.menu ul li{
+  position: relative;
+  /* top: 0;
+  left: 0; */
+}
+
+
+.menu ul li ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  /* height: 300px; */
+  background-color: burlywood;
+  /* visibility: hidden; */
+  
+}
+
+.menu ul li ul li{
+  display: block;
+
+}
+.menu ul li ul li{
+  display: block;
+}
+
+.menu ul li ul {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+}
